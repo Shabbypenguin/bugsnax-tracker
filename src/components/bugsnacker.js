@@ -1,96 +1,34 @@
-import React, {useState} from 'react';
+import React, { useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import Random from './random.js'
+import Button from 'react-bootstrap/Button';
+import '../App.css';
+
+
 
 function BugSnaxer() {
-	let [currentlocationsname, setlocationsname] = useState(null)
-	let [currentlocationsid, setlocationsid] = useState(null)
-	let [currentlocationslocation, setlocationslocation] = useState(null)
-	let [currentlocationsimage, setlocationsimage] = useState(null)
-	let [currentgrumpusesname, setgrumpusesname] = useState(null)
-	let [currentgrumpusesid, setgrumpusesid] = useState(null)
-	let [currentgrumpuseslocation, setgrumpuseslocation] = useState(null)
-	let [currentgrumpusesimage, setgrumpusesimage] = useState(null)
-	let [snaxatlocation, setsnaxatlocation] = useState(null)
-	let [grumpusatlocation, setgrumpusatlocation] = useState(null)
 	
-	
-	function getfullbugsnax() {
-		
-		fetch("https://rambunctious-oasis-tuesday.glitch.me/bugsnax")
-		.then(response => response.json())
-		.then(result => console.log(result.bugsnax))
-		.catch(error => console.log('error', error))
-	}
-	
-
-	
-	function getRandom(max) {
-		return Math.floor(Math.random() * max + 1)
-	}
-	
-	function getfulllocations() {
-		
-		fetch("https://rambunctious-oasis-tuesday.glitch.me/locations")
-		.then(response => response.json())
-		.then(result => console.log(result.locations))
-		.catch(error => console.log('error', error))
-	}
-	
-	function getlocations(requested) {
-		
-		fetch(`https://bugsnax-api-project.glitch.me/locations/${requested}`)
-		.then(response => response.json())
-		.then(locationresult => {
-			setlocationsname(currentlocationsname = locationresult[0].name)
-			setlocationsimage(currentlocationsimage = `/images/locations/${locationresult[0].id}_sticker.png`)
-			setgrumpusatlocation(locationresult[0].inhabitants.map(grumpus => <li key={grumpus.id}><b>{grumpus.name}</b></li>))
-			setsnaxatlocation(locationresult[0].bugsnax.map(snax => 
-				<li key={snax.id}> 
-				<Link to={'/bugsnax/' + snax.id}>
-				{snax.name}
-				</Link></li> 
-			))
-		})
-	}
-	
-	function getfullgrumpuses() {
-		
-		fetch("https://bugsnax-api-project.glitch.me/grumpuses")
-		.then(response => response.json())
-		.then(result => console.log(result.grumpuses))
-		.catch(error => console.log('error', error))
-	}
-	
-	function getgrumpuses(requested) {
-		
-		fetch(`https://bugsnax-api-project.glitch.me/grumpuses/${requested}`)
-		.then(response => response.json())
-		.then(result => {
-			console.log(result[0])
-			setgrumpusesname(currentgrumpusesname = result[0].name)
-			setgrumpusesid(currentgrumpusesid = result[0].id)
-			setgrumpusesimage(currentgrumpusesimage = `/images/grumpuses/${result[0].id}_sticker.png`)
-			setgrumpuseslocation(currentgrumpuseslocation = result[0].location.name)
-		})
-		.catch(error => console.log('error', error))
-	}
-	
-
-	
+	useEffect(() => {
+		document.title = "Bugsnax Tracker"
+	}, []);
 	
 	return (
-		<div>
-		<button onClick={getfullbugsnax}>Full list of Bugsnax</button>
-		<button onClick={() => {getlocations(getRandom(8))}}>Get random location</button>  
-		<button onClick={() => {getgrumpuses(getRandom(8))}}>Get random Grumpus</button>
+		<div className="layer">
+		<Link to={'/'}><Button variant="success">Go back home</Button></Link>
+		<Link to={'/bugsnaxlist/'}><Button variant="success">Full list of Bugsnax</Button></Link>
+		<Link to={'/bugsnax/' + Random(99)}><Button variant="success">Get random Bugsnax</Button></Link>
+		<Link to={'/locations/'}><Button variant="success">Check out the various locations</Button></Link>
+		<Link to={'/locations/' + Random(9)}><Button variant="success">Get a random location</Button></Link>
+		<Link to={'/grumpuses/'}><Button variant="success">Find out more about the Grumpuses</Button></Link>
+		<Link to={'/grumpuses/' + Random(14)}><Button variant="success">Get random Grumpus</Button></Link>
 		<br></br>
-		
-		<h2>Grumpuses at this location:</h2>
-		<ul>{grumpusatlocation}</ul>
-		<h2>Bugsnax at this location:</h2>
-		<ul>{snaxatlocation}</ul>
 		<br></br>
-
+		<div style={{textAlign: 'center'}}>
+		<h1>Welcome to Snacktooth island! A place full of friendship, fun and mystery. <br></br>Famed explorer Elizabert Megafig has called on you to write a story and publish to the world her newest findings. What will you find when you get there? </h1>
+		</div>
+		<br></br>
+		<br></br>
+		<img alt=""	className="map" src="../images/SnaktoothIslandMap.jpeg"></img>
 		</div>
 	)
 	

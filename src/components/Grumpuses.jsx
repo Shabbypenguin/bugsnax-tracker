@@ -1,57 +1,76 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import db from '../data/grumpuses.json'
 import { Link } from 'react-router-dom';
+import headers from './headers/grumpuses.json'
+import Table from 'react-bootstrap/Table'
+import Random from './random.js'
+import Button from 'react-bootstrap/Button';
 
 
-function Grumpuses(props) {
-	
-	let [currentgrumpusesname, setgrumpusesname] = useState(null)
-	let [currentgrumpusesid, setgrumpusesid] = useState(null)
-	let [currentgrumpuseslocation, setgrumpuseslocation] = useState(null)
-	let [currentgrumpusesimage, setgrumpusesimage] = useState(null)
-	console.log(props.match.params.id)
-	
-	function getGrumpus(id) {
-		fetch(`https://bugsnax-api-project.glitch.me/grumpuses/${props.match.params.id}`)
-		.then(response => response.json())
-		.then(result => {
-			console.log(result[0])
-			setgrumpusesname(currentgrumpusesname = result[0].name)
-			setgrumpusesid(currentgrumpusesid = result[0].id)
-			setgrumpusesimage(currentgrumpusesimage = `/images/grumpuses/${result[0].id}_grumpus.png`)
-			setgrumpuseslocation(currentgrumpuseslocation = result[0].locations[0].name)
-		})
-		.catch(error => console.log('error', error))
-	}
-	
-	useEffect(() => {
-			getGrumpus(props.match.params.id)
-			
-		return (
-			<div>
-			<Link to={'/grumpuses/' + getRandom(14)}><button>Get random Bugsnax</button></Link><br></br>
-			{currentgrumpusesid}<br></br>
-			{currentgrumpusesname}<br></br>
-			{currentgrumpuseslocation}<br></br>
-			<img alt="" src={currentgrumpusesimage}></img>
-			
-			</div>
-		)
-	},[props.match.params.id])
-	
-	function getRandom(max) {
-		return Math.floor(Math.random() * max + 1)
-	}
-	
-	return (
-		<div>
-		<Link to={'/grumpuses/' + getRandom(14)}><button>Get random Grumpus</button></Link><br></br>
-		{currentgrumpusesid}<br></br>
-		{currentgrumpusesname}<br></br>
-		{currentgrumpuseslocation}<br></br>
-		<img alt="" src={currentgrumpusesimage}></img>
+function Grumpuses() {
+  console.log()
+  const TableHeader = (props) => {
+    const { headers } = props;
+    return(
+      <thead className="thead-dark" key="header-1">
+      <tr key="header-0">
+      { headers && headers.map((value, index) => {
+        return <th key={index}><div>{value}</div></th>
+      })}
+      </tr>
+      </thead>
+    );
+  }
+  
+  const TableBody = (props) => {
+    const { headers, rows } = props;
+    
+    function buildRow(row, headers) {
+      return (
+        <tr key={row.id}>
+        { headers.map((value, index) => {
+          if (value === "Name"){
+            return <td key={index}><b><Link to={`/grumpuses/${row.ID}`}>{row[value]}</Link></b></td>
 
-		</div>
-	)
+          }else{
+            return <td key={index}><b>{row[value]}</b></td>
+          }
+        })}
+        </tr>
+      )
+    };
+    
+    return(
+      <tbody>
+      { rows && rows.map((value) => {
+        return buildRow(value, headers);
+      })}
+      </tbody>
+    );
+  }
+  
+  return (
+    <div style={{ backgroundColor: '#CCCCCCCC'}}>
+    <Link to={'/'}><Button variant="success">Go back home</Button></Link>
+    <Link to={'/bugsnaxlist/'}><Button variant="success">Full list of Bugsnax</Button></Link>
+    <Link to={'/bugsnax/' + Random(99)}><Button variant="success">Get random Bugsnax</Button></Link>
+    <Link to={'/locations/'}><Button variant="success">Check out the various locations</Button></Link>
+    <Link to={'/locations/' + Random(9)}><Button variant="success">Get a random location</Button></Link>
+    <Link to={'/grumpuses/'}><Button variant="success">Find out more about the Grumpuses</Button></Link>
+    <Link to={'/grumpuses/' + Random(14)}><Button variant="success">Get random Grumpus</Button></Link>
+    <br></br>
+    <h2>The Major Grumpuses:</h2>
+    <Table striped bordered hover responsive>
+    <TableHeader headers={Object.keys(headers)}></TableHeader>
+    <TableBody headers={Object.keys(headers)} rows={db}></TableBody>
+    </Table>
+    </div>
+  )
 }
+
+
+//<Link to={'/bugsnax/' + snax.id}></Link>
+
+
 
 export default Grumpuses

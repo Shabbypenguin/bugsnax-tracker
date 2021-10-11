@@ -1,0 +1,497 @@
+[
+    {
+      "ID": 1,
+      "Location": "Garden Grove",
+      "Name": "Bunger"
+    },
+    {
+      "ID": 2,
+      "Location": "Garden Grove",
+      "Name": "Fryder"
+    },
+    {
+      "ID": 3,
+      "Location": "Garden Grove",
+      "Name": "Shishkabug"
+    },
+    {
+      "ID": 4,
+      "Location": "Garden Grove",
+      "Name": "Sweetiefly"
+    },
+    {
+      "ID": 5,
+      "Location": "Garden Grove",
+      "Name": "White Strabby"
+    },
+    {
+      "ID": 6,
+      "Location": "Garden Grove",
+      "Name": "Dr Sodie"
+    },
+    {
+      "ID": 7,
+      "Location": "Garden Grove",
+      "Name": "Weenyworm"
+    },
+    {
+      "ID": 8,
+      "Location": "Garden Grove",
+      "Name": "Cobhopper"
+    },
+    {
+      "ID": 9,
+      "Location": "Garden Grove",
+      "Name": "Crispy Snakpod"
+    },
+    {
+      "ID": 10,
+      "Location": "Flavor Falls",
+      "Name": "Strabby"
+    },
+    {
+      "ID": 11,
+      "Location": "Flavor Falls",
+      "Name": "Pinkle"
+    },
+    {
+      "ID": 12,
+      "Location": "Flavor Falls",
+      "Name": "Rootle"
+    },
+    {
+      "ID": 13,
+      "Location": "Flavor Falls",
+      "Name": "Rootle (White)"
+    },
+    {
+      "ID": 14,
+      "Location": "Flavor Falls",
+      "Name": "Green Lollive"
+    },
+    {
+      "ID": 15,
+      "Location": "Flavor Falls",
+      "Name": "Inchwrap"
+    },
+    {
+      "ID": 16,
+      "Location": "Flavor Falls",
+      "Name": "Sandopede"
+    },
+    {
+      "ID": 17,
+      "Location": "Flavor Falls",
+      "Name": "Sub Sandopede"
+    },
+    {
+      "ID": 18,
+      "Location": "Flavor Falls",
+      "Name": "Ruby Peelbug"
+    },
+    {
+      "ID": 19,
+      "Location": "Flavor Falls",
+      "Name": "Caramel Poptick"
+    },
+    {
+      "ID": 20,
+      "Location": "Flavor Falls",
+      "Name": "Twisty Snakpod"
+    },
+    {
+      "ID": 21,
+      "Location": "Flavor Falls",
+      "Name": "Wee Mewon"
+    },
+    {
+      "ID": 22,
+      "Location": "Flavor Falls",
+      "Name": "Mama Mewon"
+    },
+    {
+      "ID": 23,
+      "Location": "Simmering Springs",
+      "Name": "Kweeble"
+    },
+    {
+      "ID": 24,
+      "Location": "Simmering Springs",
+      "Name": "Crapple"
+    },
+    {
+      "ID": 25,
+      "Location": "Simmering Springs",
+      "Name": "Pineantula"
+    },
+    {
+      "ID": 26,
+      "Location": "Simmering Springs",
+      "Name": "Orange Peelbug"
+    },
+    {
+      "ID": 27,
+      "Location": "Simmering Springs",
+      "Name": "Razzby"
+    },
+    {
+      "ID": 28,
+      "Location": "Simmering Springs",
+      "Name": "Green Grapeskeeto"
+    },
+    {
+      "ID": 29,
+      "Location": "Simmering Springs",
+      "Name": "Snaquiri"
+    },
+    {
+      "ID": 30,
+      "Location": "Simmering Springs",
+      "Name": "Tropicabug"
+    },
+    {
+      "ID": 31,
+      "Location": "Simmering Springs",
+      "Name": "Lovely Sweetiefly"
+    },
+    {
+      "ID": 32,
+      "Location": "Simmering Springs",
+      "Name": "Baja Tacroach"
+    },
+    {
+      "ID": 33,
+      "Location": "Simmering Springs",
+      "Name": "Waffstackarack"
+    },
+    {
+      "ID": 34,
+      "Location": "Simmering Springs",
+      "Name": "Grumpy Snakpod"
+    },
+    {
+      "ID": 35,
+      "Location": "Boiling Bay",
+      "Name": "Green Crapple"
+    },
+    {
+      "ID": 36,
+      "Location": "Boiling Bay",
+      "Name": "Grapeskeeto"
+    },
+    {
+      "ID": 37,
+      "Location": "Boiling Bay",
+      "Name": "Greater Cocomite"
+    },
+    {
+      "ID": 38,
+      "Location": "Boiling Bay",
+      "Name": "Lesser Cocomite"
+    },
+    {
+      "ID": 39,
+      "Location": "Boiling Bay",
+      "Name": "La Sodieux"
+    },
+    {
+      "ID": 40,
+      "Location": "Boiling Bay",
+      "Name": "Noodler"
+    },
+    {
+      "ID": 41,
+      "Location": "Boiling Bay",
+      "Name": "Paletoss"
+    },
+    {
+      "ID": 42,
+      "Location": "Boiling Bay",
+      "Name": "Paletoss Grande"
+    },
+    {
+      "ID": 43,
+      "Location": "Boiling Bay",
+      "Name": "Red Banopper"
+    },
+    {
+      "ID": 44,
+      "Location": "Boiling Bay",
+      "Name": "Flamin' Cheepoof"
+    },
+    {
+      "ID": 45,
+      "Location": "Boiling Bay",
+      "Name": "Sherbie"
+    },
+    {
+      "ID": 46,
+      "Location": "Boiling Bay",
+      "Name": "Fruity Snakpod"
+    },
+    {
+      "ID": 47,
+      "Location": "Boiling Bay",
+      "Name": "Minimaki"
+    },
+    {
+      "ID": 48,
+      "Location": "Boiling Bay",
+      "Name": "Megamaki"
+    },
+    {
+      "ID": 49,
+      "Location": "Scorched Gorge",
+      "Name": "BBQ Bunger"
+    },
+    {
+      "ID": 50,
+      "Location": "Scorched Gorge",
+      "Name": "Sweet Fryder"
+    },
+    {
+      "ID": 51,
+      "Location": "Scorched Gorge",
+      "Name": "Ribblepede"
+    },
+    {
+      "ID": 52,
+      "Location": "Scorched Gorge",
+      "Name": "Poptick"
+    },
+    {
+      "ID": 53,
+      "Location": "Scorched Gorge",
+      "Name": "Spuddy"
+    },
+    {
+      "ID": 54,
+      "Location": "Scorched Gorge",
+      "Name": "Scorpenyo"
+    },
+    {
+      "ID": 55,
+      "Location": "Scorched Gorge",
+      "Name": "Shy Weenyworm"
+    },
+    {
+      "ID": 56,
+      "Location": "Scorched Gorge",
+      "Name": "Cheepoof"
+    },
+    {
+      "ID": 57,
+      "Location": "Scorched Gorge",
+      "Name": "White Cheepoof"
+    },
+    {
+      "ID": 58,
+      "Location": "Scorched Gorge",
+      "Name": "Crystal Sweetiefly"
+    },
+    {
+      "ID": 59,
+      "Location": "Scorched Gorge",
+      "Name": "Green Peelbug"
+    },
+    {
+      "ID": 60,
+      "Location": "Scorched Gorge",
+      "Name": "Puffy Snakpod"
+    },
+    {
+      "ID": 61,
+      "Location": "Sizzlin' Sands",
+      "Name": "Tacroach"
+    },
+    {
+      "ID": 62,
+      "Location": "Sizzlin' Sands",
+      "Name": "Preying Picantis"
+    },
+    {
+      "ID": 63,
+      "Location": "Sizzlin' Sands",
+      "Name": "Black Lollive"
+    },
+    {
+      "ID": 64,
+      "Location": "Sizzlin' Sands",
+      "Name": "Loaded Spuddy"
+    },
+    {
+      "ID": 65,
+      "Location": "Sizzlin' Sands",
+      "Name": "Buffalocust"
+    },
+    {
+      "ID": 66,
+      "Location": "Sizzlin' Sands",
+      "Name": "Eggler"
+    },
+    {
+      "ID": 67,
+      "Location": "Sizzlin' Sands",
+      "Name": "Flapjackarak"
+    },
+    {
+      "ID": 68,
+      "Location": "Sizzlin' Sands",
+      "Name": "Scorpepper"
+    },
+    {
+      "ID": 69,
+      "Location": "Sizzlin' Sands",
+      "Name": "Incherrito"
+    },
+    {
+      "ID": 70,
+      "Location": "Sizzlin' Sands",
+      "Name": "Black Razzby"
+    },
+    {
+      "ID": 71,
+      "Location": "Sizzlin' Sands",
+      "Name": "Sodie D"
+    },
+    {
+      "ID": 72,
+      "Location": "Sizzlin' Sands",
+      "Name": "Cheezer"
+    },
+    {
+      "ID": 73,
+      "Location": "Sizzlin' Sands",
+      "Name": "Meaty Snakpod"
+    },
+    {
+      "ID": 74,
+      "Location": "Sizzlin' Sands",
+      "Name": "Bombino"
+    },
+    {
+      "ID": 75,
+      "Location": "Sizzlin' Sands",
+      "Name": "Mothza Supreme"
+    },
+    {
+      "ID": 76,
+      "Location": "Sugarpine Woods",
+      "Name": "Kwookie"
+    },
+    {
+      "ID": 77,
+      "Location": "Sugarpine Woods",
+      "Name": "Charmallow"
+    },
+    {
+      "ID": 78,
+      "Location": "Sugarpine Woods",
+      "Name": "Cinnasnail"
+    },
+    {
+      "ID": 79,
+      "Location": "Sugarpine Woods",
+      "Name": "Hunnabe"
+    },
+    {
+      "ID": 80,
+      "Location": "Sugarpine Woods",
+      "Name": "Sprinklepede"
+    },
+    {
+      "ID": 81,
+      "Location": "Sugarpine Woods",
+      "Name": "Yellow Peelbug"
+    },
+    {
+      "ID": 82,
+      "Location": "Sugarpine Woods",
+      "Name": "Bopsicle"
+    },
+    {
+      "ID": 83,
+      "Location": "Sugarpine Woods",
+      "Name": "Big Bopsicle"
+    },
+    {
+      "ID": 84,
+      "Location": "Sugarpine Woods",
+      "Name": "Rainbow Sweetiefly"
+    },
+    {
+      "ID": 85,
+      "Location": "Sugarpine Woods",
+      "Name": "Nutty Snakpod"
+    },
+    {
+      "ID": 86,
+      "Location": "Frosted Peak",
+      "Name": "Banopper"
+    },
+    {
+      "ID": 87,
+      "Location": "Frosted Peak",
+      "Name": "Scoopy"
+    },
+    {
+      "ID": 88,
+      "Location": "Frosted Peak",
+      "Name": "Cheery"
+    },
+    {
+      "ID": 89,
+      "Location": "Frosted Peak",
+      "Name": "Scoopy Banoopy"
+    },
+    {
+      "ID": 90,
+      "Location": "Frosted Peak",
+      "Name": "Aggroll"
+    },
+    {
+      "ID": 91,
+      "Location": "Frosted Peak",
+      "Name": "Chippie"
+    },
+    {
+      "ID": 92,
+      "Location": "Frosted Peak",
+      "Name": "Chillynily"
+    },
+    {
+      "ID": 93,
+      "Location": "Frosted Peak",
+      "Name": "Flutterjam"
+    },
+    {
+      "ID": 94,
+      "Location": "Frosted Peak",
+      "Name": "Mt Sodie"
+    },
+    {
+      "ID": 95,
+      "Location": "Frosted Peak",
+      "Name": "Stewdler"
+    },
+    {
+      "ID": 96,
+      "Location": "Frosted Peak",
+      "Name": "Melty Snakpod"
+    },
+    {
+      "ID": 97,
+      "Location": "Frosted Peak",
+      "Name": "Instabug"
+    },
+    {
+      "ID": 98,
+      "Location": "Frosted Peak",
+      "Name": "Daddy Cakelegs"
+    },
+    {
+      "ID": 99,
+      "Location": "Frosted Peak",
+      "Name": "Baby Cakelegs"
+    }
+  ]

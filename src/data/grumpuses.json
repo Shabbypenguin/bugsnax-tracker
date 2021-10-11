@@ -1,0 +1,86 @@
+[
+  {
+    "ID": 1,
+    "Name": "Filbo Fiddlepie",
+    "Occupation": "Mayor",
+    "Location": "Flavor Falls"
+  },
+  {
+    "ID": 2,
+    "Name": "Wambus Troubleham",
+    "Occupation": "Farmer",
+    "Location": "Garden Grove"
+  },
+  {
+    "ID": 3,
+    "Name": "Beffica Winklesnoot",
+    "Occupation": "Information Specialist",
+    "Location": "Garden Grove"
+  },
+  {
+    "ID": 4,
+    "Name": "Triffany Lottablog",
+    "Occupation": "Archaeologist",
+    "Location": "Scorched Gorge"
+  },
+  {
+    "ID": 5,
+    "Name": "Floofty Fizzlebean",
+    "Occupation": "Scientist",
+    "Location": "Boiling Bay"
+  },
+  {
+    "ID": 6,
+    "Name": "Gramble Gigglefunny",
+    "Occupation": "Bugsnax Caretaker",
+    "Location": "Simmering Springs"
+  },
+  {
+    "ID": 7,
+    "Name": "Shellsy Woolbag",
+    "Occupation": "Author",
+    "Location": "Sizzlin' Sands"
+  },
+  {
+    "ID": 8,
+    "Name": "Snorpy Fizzlebean",
+    "Occupation": "Inventor",
+    "Location": "Sugarpine Woods"
+  },
+  {
+    "ID": 9,
+    "Name": "Wiggle Wigglebottom",
+    "Occupation": "Performer",
+    "Location": "Simmering Springs"
+  },
+  {
+    "ID": 10,
+    "Name": "Elizabert \"Lizbert\" Megafig",
+    "Occupation": "Explorer",
+    "Location": "????"
+  },
+  {
+    "ID": 11,
+    "Name": "Eggabell Batternugget",
+    "Occupation": "Physician",
+    "Location": "Frosted Peak"
+  },
+  {
+    "ID": 12,
+    "Name": "Chandlo Funkbun",
+    "Occupation": "Lifting",
+    "Location": "Sugarpine Woods"
+  },
+  {
+    "ID": 13,
+    "Name": "Cromdo Face",
+    "Occupation": "Salesman",
+    "Location": "Scorched Gorge" 
+  },
+  {
+    "ID": 14,
+    "Name": "Clum Clumby Clumbernut",
+    "Occupation": "GNN Employee",
+    "Location": "GNN Headquarters"
+  }
+]
